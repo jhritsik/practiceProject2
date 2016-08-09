@@ -1,0 +1,28 @@
+    <!-- build:css({app,.tmp}) assets/css/isp-styles-{{ page.embedId }}.css -->
+    {{#each page.embedCss }}
+    <link rel="stylesheet" href="assets/{{this}}">
+    {{/each}}
+    <!-- endbuild -->
+
+
+    <!-- build:js({app,.tmp}) assets/js/isp-vendor-{{ page.embedId }}.js -->
+    {{#each page.vendorJs }}
+    <script src="assets/{{this}}"></script>
+    {{/each}}
+    <!-- endbuild -->
+
+    <script>
+        ISP = window.ISP || {};
+        ISP.assetRoot = "{{ assetRoot }}";
+        if (typeof jQuery != 'undefined') {
+            ISP.jQuery = jQuery.noConflict();
+        } else {
+            ISP.jQuery = null;
+        }
+    </script>
+
+    <!-- build:js({app,.tmp}) assets/js/isp-project-{{ page.embedId }}.js -->
+    {{#each page.projectJs }}
+    <script src="assets/{{this}}"></script>
+    {{/each}}
+    <!-- endbuild -->

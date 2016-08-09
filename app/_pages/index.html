@@ -1,0 +1,124 @@
+---
+layout: <% if(build) { print(layoutBuild) } else { print(layoutDev) } %>
+
+# REQUIRED: preview layout: embed_xsmall, embed_small, embed_medium, basic_html_layout, interactive_layout
+layoutDev: basic_html_layout
+
+# REQUIRED: build layout: build (for embed), basic_html_layout
+layoutBuild: basic_html_layout
+
+# REQUIRED: give the interactive a unique id
+embedId: practiceProject2
+
+# list of css assets. project.css corresponds with _scss/project.scss
+embedCss:
+- css/project.css
+
+# list of js libs
+vendorJs:
+- bower_components/jquery/dist/jquery.js
+
+# list of js assets
+projectJs:
+- js/module.sample.js
+- js/project.js
+
+title: jaime testing
+
+---
+
+
+  <!-- prefix all assets with {{assetRoot}} to maintain local/server refs -->
+  <!-- <img src="{{assetRoot}}/assets/img/logo.svg"> -->
+
+<div id="mainContainer">
+
+	{{> nav}}
+	<div id="mainImg">
+		<img style="width:100%;" src="{{assetRoot}}/assets/img/runDisney.jpg">
+	</div>
+	<div class="band">
+		<p>Support the Alf</p>
+	</div>
+	<style>
+		#personaContainer {
+			border:4px solid red;
+			overflow: auto;
+		}
+		.persona {
+			border:1px solid red;
+			width:20%;
+			position: relative;
+			float:left;
+		}
+		.persona img {
+			width:100%;
+		}
+		.personalOverlay {
+			position: absolute;
+			bottom:0;
+			width:100%;
+			background-color:rgba(0, 0, 0, 0.4);
+			height:40%;
+			color:#fff;
+			font-family: arial;
+			font-size:14px;
+			text-transform: capitalize;
+			line-height: 25px;
+		}
+		.personalOverlay p {
+			width:80%;
+			margin-left:10%;
+			text-align: center;
+			border:1px solid yellow;
+		}
+		.readMoreButton {
+			width:40%;
+			margin-left:30%;
+			border:1px solid #fff;
+			border-radius: 5px;
+			text-align: center;
+		}
+	</style>
+	<div id="personaContainer">
+		<div class="persona">
+			<img src="http://www.consultwithdoctor.com/images/uploads/Cds4LOkHqOFAOjS.jpg" />
+			<div class="personalOverlay">
+				<p>FDA Gives Fast Track Approval to New PBC Treatment</p>
+				<div class="readMoreButton">
+					Read More
+				</div>
+			</div>
+		</div>
+		<div class="persona">
+			<img src="http://www.mamashealth.com/organs/images/organdonor.jpg" />
+			<div class="personalOverlay">
+				<p>register today to be an organ donor at ORGANIZE</p>
+				<div class="readMoreButton">
+					Read More
+				</div>
+			</div>
+		</div>
+		<div class="persona">
+			<img src="http://previews.123rf.com/images/len44ik/len44ik1303/len44ik130300615/18765935-Sick-little-girl-with-chickenpox-eating-lemon-isolated-on-white-Stock-Photo.jpg" />
+			<div class="personalOverlay">
+				<p>We Dare You to Care About Liver Disease</p>
+				<div class="readMoreButton">
+					Read More
+				</div>
+			</div>
+		</div>
+	</div><!-- end div personaContainer -->
+	<div class="band mission">
+		<p>Our Mission is to facilitate, advocate and promote education, support and reserch for the prevention, treatment and cure of liver disease.</p>
+	</div>
+<h1> {{ title }} </h1>
+
+<template>jaime is testing this</template>
+</div>
+
+ 
+    <!--<img src="{{assetRoot}}/assets/img/testImg.jpg">-->
+
+
+

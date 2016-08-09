@@ -1,0 +1,39 @@
+{
+"message": "success",
+"asset": {
+    "embedUrl": "http://interactives.nationalgeographic.com/asjlq93n1nqn.html",
+    "repo": "http://github.com:natgeo/specialprojects-ivorytrade.git",
+    "embedType": "iframe",
+    "dimensions": [[600,960],[540,200]],
+    "hideForMobile" : false,
+    "compatibleSystems: ["AEM", "iOS", "WordPress"],
+    "dateCreated" : "Fri Dec 22 2014 04:20:00 GMT-0400 (EDT)" ,
+    "dateModified" : "Wed Jul 29 2015 15:45:09 GMT-0400 (EDT)" ,
+    "requiresSubscription" : true, // or false
+    "release": "Mon May 1 2015 12:00:00 GMT-0400 (EDT)",
+    "expires": "Mon Jan 1 2016 12:00:00 GMT-0400 (EDT)",
+    "authors": [{name:"Adam Lake", "title":"Director Application Development"}, {"name":"Charles Carpenter"}],
+    "taxonomy": {
+        "source": "",
+        "firstSubjectAncestor": "",
+        "firstSubject": "",
+        "adKeywords": "",
+        "otherSubjects": "",
+        "locations": "",
+        "series": "",
+        "genres": "",
+        "people": "",
+        "organizations": "",
+        "events": "",
+        "concepts": "",
+        "audiences": "",
+     },
+     "seo" : {
+       
+     },
+     license: {
+       "EULA": "http://www.nationalgeographic.com/community/terms/"
+     },
+     caption: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+  }
+}

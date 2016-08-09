@@ -1,0 +1,16 @@
+// Font Families
+// =============
+
+$font-serif: "utopia-std", Georgia, Times, "Times New Roman", serif;
+$font-sans: "Helvetica Neue", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+
+$font-default: $font-serif;
+$font-alternate: $font-sans;
+
+// Crazy to convert px to em
+$padding-default: 1.5em;
+
+$padding-half: $padding-default / 2;
+$padding-quarter: $padding-default / 4;
+$padding-one-and-half: $padding-default * 1.5;
+$padding-double: $padding-default * 2;
