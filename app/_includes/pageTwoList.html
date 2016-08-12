@@ -1,1 +1,35 @@
-<li></li>
+<div class="cycle-slideshow" 
+    data-cycle-fx="scrollHorz" 
+    data-cycle-timeout="2000"
+    data-cycle-slides="> div"
+    >
+    <div style="background:#fcc">
+        <p>Lorem ipsum dolor ...
+    </div>
+    <div style="background:#cfc">
+        <p>Lorem ipsum dolor ...
+    </div>
+    <div style="background:#ccf">
+        <p>Lorem ipsum dolor ...
+    </div>
+</div>
+<div class="slideshow" 
+    data-cycle-fx=carousel
+    data-cycle-timeout=0
+    data-cycle-carousel-visible=5
+    data-cycle-next="#next"
+    data-cycle-prev="#prev"
+    data-cycle-pager="#pager"
+    >
+    <img src="http://malsup.github.io/images/beach1.jpg">
+    <img src="http://malsup.github.io/images/beach2.jpg">
+    ...
+    <img src="http://malsup.github.io/images/beach9.jpg">
+</div>
+
+<div class=center>
+    <a href=# id=prev>&lt;&lt; Prev </a>
+    <a href=# id=next> Next &gt;&gt; </a>
+</div>
+
+<div class="cycle-pager" id=pager></div>

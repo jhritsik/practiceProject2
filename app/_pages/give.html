@@ -1,0 +1,57 @@
+---
+layout: <% if(build) { print(layoutBuild) } else { print(layoutDev) } %>
+
+# REQUIRED: preview layout: embed_xsmall, embed_small, embed_medium, basic_html_layout, interactive_layout
+layoutDev: basic_html_layout
+
+# REQUIRED: build layout: build (for embed), basic_html_layout
+layoutBuild: basic_html_layout
+
+# REQUIRED: give the interactive a unique id
+embedId: practiceProject2_page2
+
+# list of css assets. project.css corresponds with _scss/project.scss
+embedCss:
+- css/project.css
+
+# list of js libs
+vendorJs:
+- bower_components/jquery/dist/jquery.js
+
+
+# list of js assets
+projectJs:
+- js/module.sample.js
+- js/project.js
+
+
+
+
+---
+
+
+
+  <!-- prefix all assets with {{assetRoot}} to maintain local/server refs -->
+  <!-- <img src="{{assetRoot}}/assets/img/logo.svg"> -->
+  
+
+<div class="mainContainer">
+
+	{{> nav}}
+	{{> secondNav}}
+
+	<div class="mainImg">
+		<!--<img style="width:100%;" src="{{assetRoot}}/assets/img/runDisney.jpg">-->
+		<img src="{{assetRoot}}/assets/img/page2mainImg.jpg" />
+
+		<h1>
+			Run Disney with ALF
+		</h1>
+	</div>
+	{{> list_p2}}
+	{{> list_p2}}
+	{{> list_p2}}
+	{{> list_p2}}
+	{{> list_p2}}
+	{{> list_p2}}
+</div
