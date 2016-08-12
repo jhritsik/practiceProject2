@@ -18,6 +18,16 @@ ul {
     }
 }
 #practiceProject2, #practiceProject2_page2 {
+    /* ------ Button Component ------ */
+    .button {
+        width:100px;
+        padding:15px 40px;
+        border:1px solid #fff;
+        border-radius: 8px;
+        text-align: center;
+        color:#fff;
+        text-transform:uppercase;
+    }
     .band{
         width:100%;
         background-color:rgba(0, 0, 0, 0.8);
@@ -46,6 +56,8 @@ ul {
             text-transform:uppercase; 
             vertical-align:middle;
             margin-right:5%;
+            margin-bottom:2px;
+            border-bottom:1px solid #daeaef;
             @media screen and (max-width: 768px) {
                 display: block;
                 text-align:center;
@@ -91,7 +103,7 @@ ul {
                 outline: none;
             }
             .searchLogo {
-                width:6%;
+                width:10%;
                 height:auto;
                 vertical-align:top;
                 float:right;
@@ -123,18 +135,43 @@ ul {
             display:block;        
         }
         #mainImgOverlay {
+            border:0px solid red;
             position:absolute;
-            bottom:0px;
-            z-index:10;
-            height:150px;
-            background-color:rgba(0, 0, 0, 0.5);
-            border-top:6px solid #ff0000;
+            bottom:0;
+            color:#fff;
+            padding: 50px 20px 0 20px;
             p {
-                color:#fff;
-                width:50%;
-                border:1px solid white;
-                margin-left:10%;
-                vertical-align:middle;
+               @media screen and (min-width: 1350px) {
+                    width:70%;
+                    border:0px solid white;
+                    margin-left:4%;
+                    line-height: 35px;
+                    margin: 30px 0;
+                    display:inline-block;
+                    padding: 15px 20px 20px 20px;
+                }
+            }
+            .button {
+                display:inline-block;
+                margin: 0 0 10px 0;
+                float:right;
+
+                @media screen and (min-width: 480px)  {
+                    float:right;
+                }
+                @media screen and (min-width: 1350px) {
+                    float:none;
+                    margin-left:100px;
+
+                }
+            }
+            @media screen and (min-width: 480px)  {
+                background-color:rgba(0, 0, 0, 0.5);
+                border-top:6px solid #ff3b21;
+                padding: 20px 20px 0 20px;
+            }
+            @media screen and (min-width: 1000px) {
+                padding: 10px 20px 15px 20px;
             }
         }
         h1 {
@@ -152,30 +189,86 @@ ul {
     .band2 {
         width:100%;
         background-color:rgba(0, 0, 0, 0.8);
-        height:45px;
+        overflow:auto;
+        padding:40px 0 50px 0;
         p {
             color:#daeaef;
             font-family:arial;
             letter-spacing:2px;
-            
-            font-size:12px;
             text-align:center;
             line-height:45px;
             margin:0;
-            float:left;
+
+            font-size:12px;
+            width:100%;
+            @media screen and (min-width: 1200px) {
+                width:30%;
+                display:inline-block;
+                border:0px solid white;
+            }
         }
         p:nth-of-type(1) {
             text-transform:uppercase;
-            margin-left:10%;
-            margin-right:10%;
+            font-weight:bold;
+            font-size:18px;
+            margin-left:0;
+            margin-right:0;
+            width:100%;
+            text-align:center;
+            @media screen and (min-width: 1200px)  {
+                text-align:left;
+                margin-left:4%;
+                display:inline-block;
+                width:20%;
+                border:0px solid green;
+            }
+        }
+        p:nth-of-type(2) {
+            border:0px solid yellow;
+            @media screen and (min-width: 1200px)  {
+                width:25%;
+            }
         }
         p:nth-of-type(4) {
-            font-size:22px;
-            margin:0 18px;
+            border:0px solid red;
+            @media screen and (min-width: 1200px)  {
+                width:14%;
+            }
+        }
+        .divider {
+            display:none;
+            @media screen and (min-width: 1200px) {
+                display:inline-block;
+                width:2%;
+                margin:0 30px;
+                font-size:30px;
+            }
         }
         .arrow {
             transform: rotate(180deg);
+            margin-bottom:-5px;
         }
+        ul.volunteerList {
+            display:none;
+            list-style:square outside none;
+            font-size:12px;
+            li {
+
+            }
+        }
+        ul.donateList {
+            display:none;
+            list-style:square outside none;
+            li {
+                width:50px;
+                height:50px; 
+                background-color:grey;
+                border:1px solid black;
+            }
+        }
+        @media screen and (min-width: 1000px) {
+            padding:15px 0 20px 0;
+        } 
     }
     .bandContainer{
         width:100%;
@@ -203,6 +296,7 @@ ul {
         }
     }
     #personaContainer {
+        display:none;
         border:4px solid red;
         overflow: auto;
         background-color:rgba(0, 0, 0, 0.8);
@@ -236,13 +330,6 @@ ul {
             margin-left:10%;
             text-align: center;
             border:1px solid yellow;
-        }
-        .readMoreButton {
-            width:40%;
-            margin-left:30%;
-            border:1px solid #fff;
-            border-radius: 5px;
-            text-align: center;
         }
     }
     
