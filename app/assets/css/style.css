@@ -1,9 +1,11 @@
 /* Circular Content Carousel Style */
 .ca-container{
 	position:relative;
-	margin:25px auto 20px auto;
-	width:990px;
-	height:450px;
+	margin:0 auto;
+	/*width:990px;*/
+	width:80%;
+	height:500px;
+
 }
 .ca-wrapper{
 	width:100%;
