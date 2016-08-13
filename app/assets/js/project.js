@@ -2,10 +2,10 @@
 
 (function($) {
 	console.log(5+6);
-
+	
 	$(document).ready(function(){
 
-
+		$('#ca-container').contentcarousel();
 
 
 	});

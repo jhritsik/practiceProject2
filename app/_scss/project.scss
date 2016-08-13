@@ -96,8 +96,8 @@ ul {
                 float:left;
             }
             input {
-                width:65%;
-                border:none;
+                width:50%;
+                border:1px solid red;
                 height:20px;
                 font-size:12px;
             }
@@ -116,8 +116,8 @@ ul {
                 margin-left:10%;
             }
             @media screen and (min-width: 769px) and (max-width: 1365px) {
-                float:right;
-                margin-right:130px;
+
+                margin-left:75%;
                 margin-bottom:10px;
             }
             @media screen and (min-width: 1348px)  {
@@ -277,13 +277,13 @@ ul {
         border:0px solid red;
         background-color:#daeaef;
         margin-top:-5px;
+        display: -ms-flex; display: -webkit-flex; display: flex;
         .left {
             width:100%;
             height:100%;
             border:0px solid blue;
             display:block;
             background-color:#daeaef;
-            border-right:1px solid #afcbd3;
         }
         .outsideLeft {
             p {
@@ -301,7 +301,7 @@ ul {
             border:0px solid orange;
             display:block;
         }
-        .insideLeft {
+        .insideLeft, .insideRight {
             p {
                 width:75%;
                 border:0px solid green;
@@ -363,6 +363,27 @@ ul {
             margin-left:10%;
             text-align: center;
             border:1px solid yellow;
+        }
+    }
+    .band3 {
+        width:100%;
+        background-color:rgba(0, 0, 0, 0.8);
+        height:150px;
+        p {
+            /*color:#daeaef;*/
+            border:1px solid white;
+            color:#daeaef;
+            font-family:arial;
+            letter-spacing:2px;
+            text-align: center;
+            font-size:12px;
+            text-align:center;
+            text-transform: uppercase;
+            width:75%;
+            margin:0;
+            margin-left:12.5%;
+            line-height: 25px;
+
         }
     }
     

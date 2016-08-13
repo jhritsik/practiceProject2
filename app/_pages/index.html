@@ -13,6 +13,10 @@ embedId: practiceProject2
 # list of css assets. project.css corresponds with _scss/project.scss
 embedCss:
 - css/project.css
+- css/demo.css
+- css/jquery.jscrollpane.css
+
+- css/style.css
 
 # list of js libs
 vendorJs:
@@ -25,46 +29,23 @@ projectJs:
 - js/project.js
 
 
+
 title: jaime testing
 
 
 ---
-	<style>
-	
- 	.band3 {
-		width:100%;
-        background-color:rgba(0, 0, 0, 0.8);
-        height:150px;
-	}
-	.band3 p {
-        /*color:#daeaef;*/
-        border:1px solid white;
-        color:#daeaef;
-        font-family:arial;
-        letter-spacing:2px;
-        text-align: center;
-        font-size:12px;
-        text-align:center;
- 		text-transform: uppercase;
- 		width:75%;
- 		margin:0;
- 		margin-left:12.5%;
- 		line-height: 25px;
 
-    }
-
-	</style>
 
   <!-- prefix all assets with {{assetRoot}} to maintain local/server refs -->
   <!-- <img src="{{assetRoot}}/assets/img/logo.svg"> -->
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
 
 
 <div id="mainContainer">
 	<div id="navWrapper">
 		{{> nav}}
 	</div>
-	<!--{{> cycle}}-->
+
 	<div class="mainImg">
 		<!--<img style="width:100%;" src="{{assetRoot}}/assets/img/runDisney.jpg">-->
 		<img src="{{assetRoot}}/assets/img/maingImgBackground1b.jpg" />
@@ -111,12 +92,12 @@ title: jaime testing
 				</svg>
 				<p>liver disease information</p>
 			</div>
-			<div class="right">
+			<div class="right insideRight">
 				<p>find your local division</p>
 			</div>
 		</div>
 	</div>
-	<div style="clear:both;"></div>
+	{{> cycle}}
 	<div id="personaContainer">
 		<div class="persona">
 			<img src="http://www.consultwithdoctor.com/images/uploads/Cds4LOkHqOFAOjS.jpg" />
@@ -163,17 +144,10 @@ title: jaime testing
 
 	{{> footer}}
 
-	<div ng-app="myApp" w3-test-directive></div>
 
-<script>
-var app = angular.module("myApp", []);
-app.directive("w3TestDirective", function() {
-    return {
-        template : "<div class='jaime'>I was made in a directive constructor!</div>"
-    };
-});
-</script>
-<template>jaime is testing this</template>
+
+
+
 
 
  
