@@ -87,7 +87,6 @@ ul {
             }
         }
         .search {
-            border:0px solid black;
             color:#9cbdc7;
             text-transform:none;
             overflow:auto;
@@ -125,9 +124,6 @@ ul {
             }
         }
     }
-
-    
-
     .mainImg {  
         position:relative;
         border-bottom:1px solid #333;
@@ -137,15 +133,17 @@ ul {
             display:block;        
         }
         #mainImgOverlay {
-            border:0px solid red;
             position:absolute;
             bottom:0;
             color:#fff;
             padding: 50px 20px 0 20px;
+            line-height:20px;
             p {
+                @media screen and (min-width: 768px) {
+                    line-height:25px;
+                }
                @media screen and (min-width: 1350px) {
                     width:70%;
-                    border:0px solid white;
                     margin-left:4%;
                     line-height: 35px;
                     margin: 30px 0;
@@ -169,7 +167,7 @@ ul {
             }
             @media screen and (min-width: 480px)  {
                 background-color:rgba(0, 0, 0, 0.5);
-                border-top:6px solid #ff3b21;
+                border-top:5px solid #ff3b21;
                 padding: 20px 20px 0 20px;
             }
             @media screen and (min-width: 1000px) {
@@ -206,7 +204,6 @@ ul {
             @media screen and (min-width: 1200px) {
                 width:30%;
                 display:inline-block;
-                border:0px solid white;
             }
         }
         p:nth-of-type(1) {
@@ -222,17 +219,14 @@ ul {
                 margin-left:4%;
                 display:inline-block;
                 width:20%;
-                border:0px solid green;
             }
         }
         p:nth-of-type(2) {
-            border:0px solid yellow;
             @media screen and (min-width: 1200px)  {
                 width:25%;
             }
         }
         p:nth-of-type(4) {
-            border:0px solid red;
             @media screen and (min-width: 1200px)  {
                 width:14%;
             }
@@ -272,62 +266,58 @@ ul {
             padding:15px 0 20px 0;
         } 
     }
-    .bandContainer{
-        width:100%;
-        border:0px solid red;
-        background-color:#daeaef;
-        margin-top:-5px;
-        display: -ms-flex; display: -webkit-flex; display: flex;
-        .left {
-            width:100%;
-            height:100%;
-            border:0px solid blue;
-            display:block;
-            background-color:#daeaef;
+    #pagewrapper {
+        p {
+            margin:0;
+            padding:0;
+            font-size: 18px;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 50px;
+            letter-spacing: 2px;
+            line-height: 32px;
+            border-bottom:1px solid #afcbd3;
         }
-        .outsideLeft {
+        .column-half  {
+            background-color: #daeaef;
+        }
+        .column-half .insideLeft {
             p {
-                font-size:20px;
-                text-align:center;
-                text-transform:uppercase;
-                padding:20px;
-                letter-spacing: 2px;
-                line-height:38px;
-            }
-        }
-        .right {
-            width:100%;
-            height:100%;
-            border:0px solid orange;
-            display:block;
-        }
-        .insideLeft, .insideRight {
-            p {
-                width:75%;
-                border:0px solid green;
-                text-align:center;
-                margin-left:12.5%;
-                text-transform:uppercase;
                 color:#747d7f;
-                font-size:20px;
-                line-height:30px;
-                margin-top:20px;
             }
         }
-        .left, .right {
-            @media screen and (min-width: 680px) {
-                width:48%;
-                display:inline-block;
-            } 
+        .column-half .insideRight {
+            background-color: #fff;
+            p {
+                color:#ff3b21;
+            }
         }
         .infoGraphic {
-            width:100%;
-            border:px solid red;
+            width:50%;
+            margin-left:25%;
+            margin-top:20px;
+            margin-bottom:-20px;
         }
-        .right .right {
-            background-color: #fff;
-        }
+        @media (min-width: 768px) {
+
+            p {
+                border-bottom:none;
+            }
+            .infoGraphic {
+                margin-top:20px;
+            }
+            .row {
+                display: flex;
+                width: 100%;
+            }
+            .column-half {
+                width: 50%;
+                outline: 1px solid #afcbd3;
+            } 
+        } 
     }
+    
+    
     #personaContainer {
         display:none;
         border:4px solid red;

@@ -11,7 +11,7 @@ module.exports = function(grunt) {
         // Load all Grunt tasks
     require('load-grunt-tasks')(grunt);
 
-    var deployRoot = "http://www.nationalgeographic.com/interactive-assets/" // trailing slash
+    var deployRoot = "http://jaimehritsik.com/element84/practiceProject2/" // trailing slash
 
     grunt.initConfig({
         // Configurable paths
