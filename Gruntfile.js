@@ -58,7 +58,7 @@ module.exports = function(grunt) {
                     }],
                     then: function(results, done) {
                         if (results["prompt.version"] === true) {
-                            grunt.config.set('site.version', parseInt(grunt.config.get('site.version')) + 1)
+                            grunt.config.set('site.version', parseInt(grunt.config.get('site.version')) /* + 1*/)
                         }
                         grunt.config.set('site.assetRoot', deployRoot + path.join(grunt.config('site').name, "v" + grunt.config('site').version))
                         grunt.file.write('_config.yml', YAML.stringify(grunt.config('site')))
