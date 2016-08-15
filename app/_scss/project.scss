@@ -46,6 +46,7 @@ ul {
             text-align:center;
             line-height:22px;
             padding:10px;
+            margin:0;
         }        
     }
  /* ------ ****** MAIN NAVIGATION INCLUDE CSS ****** ------ */
@@ -137,6 +138,7 @@ ul {
                         color:#fff;
                         font-size:18px;
                         padding:0 10px;
+                        display:inline-block;
                     }
                 }
             }
@@ -489,6 +491,10 @@ ul {
                 margin-left:0;
             }
         }
+        a {
+            color:#fff;
+        }
+ 
         .pipe {
             display:none;
             @media screen and (min-width: 768px) {
