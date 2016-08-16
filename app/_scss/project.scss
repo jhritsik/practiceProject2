@@ -67,17 +67,29 @@ ul {
                 vertical-align:middle;
                 display:inline-block;
                 border:none;
+                margin-right:2%;
+                font-size:12px;
+            }
+            @media screen and (min-width: 1300px) {
                 margin-right:5%;
+                font-size:16px;
             }
         }
         .logo {
             img {
                 margin-top:15px;
-                @media screen and (min-width: 768px) {
+                @media screen and (min-width: 768px)  {
+                    width:45%;
+                    margin:20px 0 0 10px;
+                    margin-right:0;
+                    padding-right:0;
+                }
+                @media screen and (min-width: 1300px) {
                     width:75%;
                     margin:20px 0 0 10px;
                 }
             }  
+
         }
         .active {
             border-bottom:1px solid red;
@@ -87,10 +99,7 @@ ul {
             border-bottom:1px solid #000;
             vertical-align:baseline;
             @media screen and (min-width: 768px) and (max-width: 1320px) {
-               width:250px;
-               margin:0 auto;
-               display:block;
-               margin-bottom:10px;
+               
 
             }
         }
@@ -100,6 +109,12 @@ ul {
         .inputSearch {
             border:none;
             font-size:18px;
+            @media screen and (min-width: 768px) {
+                font-size:12px;
+            }
+            @media screen and (min-width: 1300px) {
+                font-size:18px;
+            }
         }
         ::-webkit-input-placeholder {
            color: #9cbdc7;
@@ -244,7 +259,7 @@ ul {
             text-align:center;
             @media screen and (min-width: 1200px)  {
                 text-align:left;
-                margin-left:4%;
+                margin-left:6%;
                 display:inline-block;
                 width:20%;
             }
@@ -374,7 +389,40 @@ ul {
         }
 
     }
+ /* ------ ****** SLIDER PAGE 1 INCLUDE CSS ****** ------ */
+    #cycleContainer {
+        background-color: #272f32;
+        .ca-item {
+            position: relative;
+        }
+        .ca-item img {
+            width:100%;
+        }
+        .ca-item:nth-of-type(2), .ca-item:nth-of-type(3)  {
+            border:1px solid #fff;
+        }
+        .sliderImgOverlay {
+            position:absolute;
+            width:100%;
+            bottom:0;
+            background-color:rgba(0, 0, 0, 0.5);
+            color:#fff;
+            padding:32px 0;
+            p {
+                width:80%;
+                margin-left:10%;
+            }
+            .button {
+                margin:0 auto;
+                padding:12px 22px !important;
+                font-size:12px;
+                border-radius: 7px !important;
+                padding-bottom:20px;
 
+            }
+        }
+    }
+ 
  /* ------ ****** PROGRAMS PAGE 1 INCLUDE CSS ****** ------ */
     .programs{
         width:100%;
