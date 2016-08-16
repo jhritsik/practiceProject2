@@ -1,11 +1,9 @@
-// per-project JS here
-
+// module that uses a safe reference to library alias
 (function($) {
-	console.log(5+6);
+	console.log(6+6);
 
 	$(document).ready(function(){
 
-		$('#ca-container').contentcarousel();
 
 		$(function(){
 			if (window.location.href.indexOf("?index") > -1) {

@@ -55,6 +55,9 @@ ul {
         position:relative;
 
     }
+    .active {
+        color:red;
+    }
     .navigation ul.nav {
         margin: 0;
         padding: 0;
@@ -72,6 +75,7 @@ ul {
         }
         .logo {
             img {
+                margin-top:15px;
                 @media screen and (min-width: 768px) {
                     width:75%;
                     margin:10px 0 0 10px;
@@ -494,7 +498,7 @@ ul {
         a {
             color:#fff;
         }
- 
+
         .pipe {
             display:none;
             @media screen and (min-width: 768px) {
