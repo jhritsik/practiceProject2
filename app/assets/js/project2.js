@@ -6,18 +6,10 @@
 
 
 		$(function(){
-			if (window.location.href.indexOf("?index") > -1) {
-			    alert("found it");
+			if(window.location.href.indexOf("give") > -1) {
+			       //alert("Alert: Desktop!");
+			       $('.give').addClass('active');
 			}
-			
-		    /*var current = location.pathname;
-		    $('.navigation li a').each(function(){
-		        var $this = $(this);
-		        // if the current path is like this link, make it active
-		        if($this.attr('href').indexOf(current) !== -1){
-		            $this.addClass('active');
-		        };
-		    });*/
 		});
 
 	});

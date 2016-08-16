@@ -55,9 +55,6 @@ ul {
         position:relative;
 
     }
-    .active {
-        color:red;
-    }
     .navigation ul.nav {
         margin: 0;
         padding: 0;
@@ -78,9 +75,12 @@ ul {
                 margin-top:15px;
                 @media screen and (min-width: 768px) {
                     width:75%;
-                    margin:10px 0 0 10px;
+                    margin:20px 0 0 10px;
                 }
             }  
+        }
+        .active {
+            border-bottom:1px solid red;
         }
         .search {
             position:relative;
